@@ -11,16 +11,14 @@
 
 <html>
 <body>
-  <form>
-     Nombre 1 : <input name="nombre1" value="30"><br>
-     Nombre 2 : <input name="nombre2" value="10"><br>
-     <input type="button" value="Somme des 2 nombres" onclick="sommeNombre(this.form)">
-  </form>
-  <script>
-    function sommeNombre(monFormulaire) {
-      var somme=monFormulaire.nombre1.value + monFormulaire.nombre2.value;
-      console.log(somme);
-    }
-  </script>
+<script>
+  function somme(monFormulaire) {
+  var nombre1= 2;
+  var nombre2 = 5;
+  var somme= nombre1 + nombre2;
+  
+  console.log(somme);
+}
+</script>
 </body>
 </html>
