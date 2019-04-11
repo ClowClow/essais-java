@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculatrice Javascript</title>
+
+  <link href="calculatrice.css" rel="stylesheet">
+</head>
+
+<html>
+<body>
+  <br/><br/>
+  <input id="nombre7" type="button" value="7"/>
+  <input id="nombre8" type="button" value="8" />
+  <input id="nombre9" type="button" value="9"/>
+  <button onclick="somme()">+</button>
+  <br/><br/>
+  <input id="nombre4" type="button" value="4"/>
+  <input id="nombre5" type="button" value="5" />
+  <input id="nombre6" type="button" value="6"/>
+  <button onclick="somme()">-</button>
+  <br/><br/>
+  <input id="nombre1" type="button" value="1"/>
+  <input id="nombre2" type="button" value="2" />
+  <input id="nombre3" type="button" value="3"/>
+  <button onclick="somme()">*</button>
+  <br/><br/>
+  <button onclick="somme()">=</button>
+  <br/> <br/>
+  <div id="result"></div>
+
+
+  <script>
+  function somme() {
+    var a = +document.getElementById("nombre1").value;
+    var b = +document.getElementById("nombre2").value;
+    document.getElementById("result").textContent = "Résultat " + (a + b);
+  }
+  </script>
+</body>
+</html>

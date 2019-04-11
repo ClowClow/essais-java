@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Soustraction Javascript</title>
+
+  <link href="somme.css" rel="stylesheet">
+</head>
+
+<html>
+<body>
+
+  <div id="result"></div>
+  <input id="nombre1" type="button" value="5"/>
+  <button onclick="somme()">-</button>
+  <input id="nombre2" type="button" value="2" />
+  <button onclick="somme()">=</button>
+  <script>
+  function somme() {
+    var a = +document.getElementById("nombre1").value;
+    var b = +document.getElementById("nombre2").value;
+    document.getElementById("result").textContent = "Résultat " + (a - b);
+  }
+  </script>
+</body>
+</html>
