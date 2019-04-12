@@ -14,11 +14,11 @@
 
   <div id="result"></div>
   <input id="nombre1" type="button" value="5"/>
-  <button onclick="somme()">/</button>
+  <button onclick="div()">/</button>
   <input id="nombre2" type="button" value="2" />
-  <button onclick="somme()">=</button>
+  <button onclick="div()">=</button>
   <script>
-  function somme() {
+  function div() {
     var a = +document.getElementById("nombre1").value;
     var b = +document.getElementById("nombre2").value;
     document.getElementById("result").textContent = "Résultat " + (a / b);

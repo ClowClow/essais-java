@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Punition</title>
+
+</head>
+
+<html>
+<body>
+  <button id="demo" onclick="displayColor()" type="submit"> Change </button>
+<br/>
+  <script>
+
+  var a = 'Je suis une perruche.';
+  /* document.write(a); */
+  var i;
+  /* while (i <= 1500){
+    document.write(a);
+    i++;
+  } */
+  /* for ( i=0 ; i<=1500; i++ )
+  {
+  document.write(i+" Je suis une perruche <br/>");
+} */
+ for ( i=1 ; i<=20; i+=2 )
+    {
+      document.write(i+" Je suis une perruche <br/>");
+    }
+
+    function displayColor() {
+      var randomColor, uniqueColors = [ ],i = 0;
+      randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+      document.body.style.background = randomColor;
+    }
+  /* for (i=0; i<=100000; i+=2){
+    document.write(i+" Je suis une perruche <br/>");
+  } */
+
+  </script>
+</body>
+</html>
